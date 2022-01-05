@@ -16,17 +16,14 @@ import javax.validation.constraints.Size
 
 data class PreferenceRequest(
 
-    //@field:Valid
     @field:KeyValid
     var key: String?,
 
-    //@field:Valid
     @field:NotNull(message = "UserId can not be null")
     @field:NotBlank
     var userId: String?,
 
-    //@field:Valid
     @field:Size(max = 4, message= "Invalid max quantity")
     var preferences: MutableSet<String>?
     
-) //: Serializable
+) : Serializable

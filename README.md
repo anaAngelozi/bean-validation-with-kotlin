@@ -1,3 +1,3 @@
 # preference
 
-Examples: Bean Validation implementations on Kotlin
+Examples: Bean and Custom Validation implementations with Kotlin
